@@ -9,15 +9,15 @@ namespace StacksandQueue
 {
     class Program
     {
-        /// Defines the entry point of the application.
+        //Defines the entry point of the application.
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Stack and Queue program using Linked List");
             CallStackQueue();
             Console.ReadLine();
         }
-        /// Calls the stack queue.
 
+        //Calls the stack queue.
         public static void CallStackQueue()
         {
             LinkedListStack linkedListStack = new LinkedListStack();
@@ -34,6 +34,15 @@ namespace StacksandQueue
                         linkedListStack.Push(70);
                         linkedListStack.Push(30);
                         linkedListStack.Push(56);
+                        linkedListStack.Display();
+                        Console.WriteLine("\n<---PeekOperationInStack--->\n");
+                        linkedListStack.Peek();
+                        linkedListStack.Display();
+                        Console.WriteLine("\n<---PopOperation--->\n");
+                        linkedListStack.Pop();
+                        linkedListStack.Display();
+                        Console.WriteLine("\n<---PopTillStackBecomesEmpty--->\n");
+                        linkedListStack.IsEmpty();
                         linkedListStack.Display();
                         break;
                     case 2:
